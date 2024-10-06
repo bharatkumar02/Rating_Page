@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+
+  .preserve {
+    transform-style: preserve-3d;
+    transition: transform 500ms ease-in-out;
+  }
+
+  .rotateCard {
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  .rotateY180 {
+    transform: rotateY(180deg);
+  }
+}
